@@ -31,5 +31,7 @@ namespace CodeHub.Models
         }
 
         public System.Data.Entity.DbSet<CodeHub.Models.Category> Categories { get; set; }
+
+        public System.Data.Entity.DbSet<CodeHub.Models.Post> Posts { get; set; }
     }
 }

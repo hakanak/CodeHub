@@ -210,6 +210,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Post.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Repositories\CategoryRepository.cs" />
@@ -287,6 +288,7 @@
     <Content Include="Views\Home\CategoryAdd.cshtml" />
     <Content Include="Views\Home\CategoryList.cshtml" />
     <Content Include="Views\Home\Repo.cshtml" />
+    <Content Include="Views\Home\SnippetAdd.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
