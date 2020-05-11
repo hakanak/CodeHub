@@ -1,0 +1,83 @@
+﻿@model IEnumerable<CodeHub.Models.Category>
+
+@{
+    ViewBag.Title = "My Category";
+}
+
+
+
+<div class="container-padding">
+
+    <!-- Start Row -->
+    <div class="row">
+
+        <!-- Start Panel -->
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-title">
+                    @ViewBag.Title
+                </div>
+                <div class="panel-body table-responsive">
+                   
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CategoryName)
+                                </th>
+
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Description)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.RowOrder)
+                                </th>
+
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CreatedDate)
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CategoryName)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Description)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.RowOrder)
+                                    </td>
+
+                                    <td>
+                                        @item.CreatedDate.ToString("dd MMMM yyyy dddd HH:mm")
+                                    </td>
+                                    <td>
+                                        @Html.ActionLink("Edit", "Edit", new { id = item.CategoryID }) |
+                                        @Html.ActionLink("Delete", "Delete", new { id = item.CategoryID })
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- End Panel -->
+
+
+
+
+    </div>
+    <!-- End Row -->
+
+
+
+</div>
+

@@ -29,5 +29,7 @@ namespace CodeHub.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<CodeHub.Models.Category> Categories { get; set; }
     }
 }

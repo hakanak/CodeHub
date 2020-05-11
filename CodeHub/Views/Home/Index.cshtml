@@ -1,31 +1,74 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Dashboard";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+
+
+
+<!-- Start Page Header -->
+<div class="page-header">
+    <h1 class="title">Dashboard</h1>
+    <ol class="breadcrumb">
+        <li class="active">This is a quick overview of some features</li>
+    </ol>
+    <!-- Start Page Header Right Div -->
+    <div class="right">
+        <div class="btn-group" role="group" aria-label="...">
+            <a href="index.html" class="btn btn-light">Dashboard</a>
+            <a href="#" class="btn btn-light"><i class="fa fa-refresh"></i></a>
+            <a href="#" class="btn btn-light"><i class="fa fa-search"></i></a>
+            <a href="#" class="btn btn-light" id="topstats"><i class="fa fa-line-chart"></i></a>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
+    <!-- End Page Header Right Div -->
 </div>
+<!-- End Page Header -->
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!-- START CONTAINER -->
+<div class="container-widget">
+    <!-- Start Top Stats -->
+    <div class="col-md-12">
+        <ul class="topstats clearfix">
+            <li class="arrow"></li>
+            <li class="col-xs-6 col-lg-2">
+                <span class="title"><i class="fa fa-dot-circle-o"></i> Today Profit</span>
+                <h3>$36.45</h3>
+                <span class="diff"><b class="color-down"><i class="fa fa-caret-down"></i> 26%</b> from yesterday</span>
+            </li>
+            <li class="col-xs-6 col-lg-2">
+                <span class="title"><i class="fa fa-calendar-o"></i> This Week</span>
+                <h3>$96.25</h3>
+                <span class="diff"><b class="color-up"><i class="fa fa-caret-up"></i> 26%</b> from last week</span>
+            </li>
+            <li class="col-xs-6 col-lg-2">
+                <span class="title"><i class="fa fa-shopping-cart"></i> Total Sales</span>
+                <h3 class="color-up">696</h3>
+                <span class="diff"><b class="color-up"><i class="fa fa-caret-up"></i> 26%</b> from last month</span>
+            </li>
+            <li class="col-xs-6 col-lg-2">
+                <span class="title"><i class="fa fa-users"></i> Visitors</span>
+                <h3>960</h3>
+                <span class="diff"><b class="color-down"><i class="fa fa-caret-down"></i> 26%</b> from yesterday</span>
+            </li>
+            <li class="col-xs-6 col-lg-2">
+                <span class="title"><i class="fa fa-eye"></i> Page View</span>
+                <h3 class="color-up">46.230</h3>
+                <span class="diff"><b class="color-down"><i class="fa fa-caret-down"></i> 26%</b> from yesterday</span>
+            </li>
+            <li class="col-xs-6 col-lg-2">
+                <span class="title"><i class="fa fa-clock-o"></i> Avarage Time</span>
+                <h3 class="color-down">2:10<small>min</small></h3>
+                <span class="diff"><b class="color-up"><i class="fa fa-caret-up"></i> 26%</b> from last week</span>
+            </li>
+        </ul>
+    </div>
+    <!-- End Top Stats -->
+
+
+
+
+</div>
+<!-- END CONTAINER -->
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!-- Start Footer -->
