@@ -67,7 +67,7 @@ namespace CodeHub.Controllers
 
 
 
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Your ahakana page.";
 
             return View();
         }
